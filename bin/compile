@@ -476,7 +476,7 @@ case ${TOOL} in
         then
             massagePkgSpecForVendor
             step "Running: go install -v ${FLAGS[@]} ${pkgs}"
-            go install -v "${FLAGS[@]}" ${pkgs} 2>&1
+            go install -v "${FLAGS[@]}" ${pkgs} 1>/dev/null 2>/dev/null
         else
             step "Running: godep go install -v ${FLAGS[@]} ${pkgs}"
             godep go install -v "${FLAGS[@]}" ${pkgs} 2>&1
