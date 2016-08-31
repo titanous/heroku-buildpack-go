@@ -30,7 +30,7 @@ TOOL=""
 GO_LINKER_VALUE=${SOURCE_VERSION}
 
 warn() {
-    echo -e "${YELLOW} !!    $@${NC}"
+  return
 }
 
 err() {
