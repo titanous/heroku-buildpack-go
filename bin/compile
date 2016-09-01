@@ -475,7 +475,7 @@ case ${TOOL} in
         if test "$VendorExperiment" = "true"
         then
             massagePkgSpecForVendor
-            step "Running: go install -v ${FLAGS[@]} ${pkgs}"
+            step "Running: go install"
             go install -v "${FLAGS[@]}" ${pkgs} 1>/dev/null 2>/dev/null
         else
             step "Running: godep go install -v ${FLAGS[@]} ${pkgs}"
